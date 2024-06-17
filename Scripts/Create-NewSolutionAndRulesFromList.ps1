@@ -3,8 +3,8 @@ param(
     [Parameter(Mandatory = $true)][string]$Workspace,
     [Parameter(Mandatory = $true)][string]$Region,
     [Parameter(Mandatory = $false)][string[]]$Solutions,
-    [Parameter(Mandatory = $false)][string[]]$SeveritiesToInclude = @("Informational", "Low", "Medium", "High")
-    [Parameter(Mandatory = $false)][string[]]$IsGov,
+    [Parameter(Mandatory = $false)][string[]]$SeveritiesToInclude = @("Informational", "Low", "Medium", "High"),
+    [Parameter(Mandatory = $false)][string[]]$IsGov
 )
 
 $context = Get-AzContext
