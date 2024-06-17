@@ -270,11 +270,6 @@
                                     "value": "Microsoft Defender for IoT"
                                 },
                                 {
-                                    "label": "Microsoft Insider Risk Management",
-                                    "description": "This solution enables insider risk management teams to investigate risk-based behavior across 25+ Microsoft products. This solution is a better-together story between Microsoft Sentinel and Microsoft Purview Insider Risk Management.",
-                                    "value": "Microsoft Purview Insider Risk Management"
-                                },
-                                {
                                     "label": "Microsoft PowerBI",
                                     "description": "The Microsoft PowerBI solution enables you to track user activities in your PowerBI environment.",
                                     "value": "Microsoft PowerBI"
@@ -313,39 +308,9 @@
                         "constraints": {
                             "allowedValues": [
                                 {
-                                    "label": "Attacker Tools Threat Protection Essentials",
-                                    "description": "The Attacker Tools Threat Protection Essentials solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns",
-                                    "value": "Attacker Tools Threat Protection Essentials"
-                                },
-                                {
-                                    "label": "Cloud Identity Threat Protection Essentials",
-                                    "description": "The Cloud Identity Threat Protection Essentials solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc.",
-                                    "value": "Cloud Identity Threat Protection Essentials"
-                                },
-                                {
-                                    "label": "Cloud Service Threat Protection Essentials",
-                                    "description": "The Cloud Service Threat Protection Essentials contains security content that is relevant for detection of attacks against various cloud services like key vault, storage, compute etc.",
-                                    "value": "Cloud Service Threat Protection Essentials"
-                                },
-                                {
-                                    "label": "Endpoint Threat Protection Essentials",
-                                    "description": "The Endpoint Threat Protection Essentials solution provides content to monitor, detect and investigate threats related to windows machines.",
-                                    "value": "Endpoint Threat Protection Essentials"
-                                },
-                                {
                                     "label": "Network Session Essentials",
                                     "description": "The Network Session Essentials solution leverages the Advanced Security Information Model (ASIM) to correlate insights across 15+ networking data sources and deliver more value for SOC use cases with less content.",
                                     "value": "Network Session Essentials"
-                                },
-                                {
-                                    "label": "Network Threat Protection Essentials",
-                                    "description": "The Network Threat Protection Essentials solution contains queries that identifies suspicious network behavior based on various data sources ingested in Sentinel.",
-                                    "value": "Network Threat Protection Essentials"
-                                },
-                                {
-                                    "label": "SOC Handbook",
-                                    "description": "The SOC Handbook solution for Microsoft Sentinel provides a collection of resources that enable and empower SOC Analysts to get better visibility and understanding of point-in-time security posture of organizational resources.",
-                                    "value": "SOC Handbook"
                                 },
                                 {
                                     "label": "SOC Process Framework",
@@ -375,11 +340,6 @@
                         "toolTip": "Select the training and tutorials solutions that you would like to install",
                         "constraints": {
                             "allowedValues": [
-                                {
-                                    "label": "KQL Training",
-                                    "description": "The KQL Training solution for Microsoft Sentinel contains resources that can help up – skill on understanding the fundamentals and using KQL in advanced scenarios like authoring effective and optimized queries used in Sentinel Analytics, Hunting Queries, Workbooks, etc.",
-                                    "value": "KQL Training"
-                                },
                                 {
                                     "label": "Training Lab",
                                     "description": "Microsoft Sentinel Training Lab helps you get ramped up with Microsoft Sentinel providing hands-on practical experience for product features, capabilities, and scenarios.",
