@@ -8,7 +8,7 @@ param(
 $context = Get-AzContext
 
 if (!$context) {
-    Connect-AzAccount
+    Connect-AzAccount -Environment AzureUSGovernment
     $context = Get-AzContext
 }
 
