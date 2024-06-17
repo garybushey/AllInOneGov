@@ -130,7 +130,7 @@ if ($Connectors) {
 #create rules from any rule templates that came from solutions
 #####
 
-$solutionURL = "https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01"
+$solutionURL = "https://management.usgovcloudapi.net/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01"
   
 #We only care about those rule templates that were created by Microsoft Sentinel solutions so
 #this query will make sure to filter out anything else as well as provide some overview data (which is not used)

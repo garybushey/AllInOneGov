@@ -27,7 +27,7 @@ $authHeader = @{
 $SubscriptionId = $context.Subscription.Id
 
 
-$baseUri = "https://management.azure.com/subscriptions/${SubscriptionId}/resourceGroups/${ResourceGroup}/providers/Microsoft.OperationalInsights/workspaces/${Workspace}"
+$baseUri = "https://management.usgovcloudapi.net/subscriptions/${SubscriptionId}/resourceGroups/${ResourceGroup}/providers/Microsoft.OperationalInsights/workspaces/${Workspace}"
 $alertUri = "$baseUri/providers/Microsoft.SecurityInsights/alertRules/"
 
 # Get a list of all the solutions
@@ -66,7 +66,7 @@ foreach ($deploySolution in $Solutions) {
         if ($deploymentName.Length -ge 64){
             $deploymentName = $deploymentName.Substring(0,64)
         }
-        $installURL = "https://management.azure.com/subscriptions/$($SubscriptionId)/resourcegroups/$($ResourceGroup)/providers/Microsoft.Resources/deployments/" + $deploymentName + "?api-version=2021-04-01"
+        $installURL = "https://management.usgovcloudapi.net/subscriptions/$($SubscriptionId)/resourcegroups/$($ResourceGroup)/providers/Microsoft.Resources/deployments/" + $deploymentName + "?api-version=2021-04-01"
         #$templateUri = $singleSolution.plans.artifacts | Where-Object -Property "name" -EQ "DefaultTemplate"
         Write-Host "Deploying solution:  $deploySolution"
         
