@@ -477,10 +477,6 @@
                                     "value": "ManagedIdentitySignInLogs"
                                 },
                                 {
-                                    "label": "Provisioning Logs (Preview)",
-                                    "value": "ProvisioningLogs"
-                                },
-                                {
                                     "label": "ADFS Sign-In Logs (Preview)",
                                     "value": "ADFSSignInLogs"
                                 },
