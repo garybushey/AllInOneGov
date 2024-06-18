@@ -283,13 +283,7 @@
                                     "label": "Microsoft Teams",
                                     "description": "Microsoft Sentinel for Teams provides Teams security logs visibility and threat protection.",
                                     "value": "Teams"
-                                },
-                                {
-                                    "label": "Threat Intelligence for Azure Government",
-                                    "description": "Ingest threat indicators into Microsoft Sentinel. Threat indicators can be IP addresses, domains, URLs and file hashes and can be used to correlate across log sources for known indicators of compromise and/or indicators of active attack",
-                                    "value": "Threat Intelligence for Azure Government"
-                                }
-                            ],
+                                }                            ],
                             "required": false
                         },
                         "visible": true
