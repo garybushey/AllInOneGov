@@ -472,20 +472,12 @@
                                     "value": "ManagedIdentitySignInLogs"
                                 },
                                 {
-                                    "label": "ADFS Sign-In Logs (Preview)",
-                                    "value": "ADFSSignInLogs"
-                                },
-                                {
                                     "label": "User Risk Events (Preview)",
                                     "value": "UserRiskEvents"
                                 },
                                 {
                                     "label": "Risky Users (Preview)",
                                     "value": "RiskyUsers"
-                                },
-                                {
-                                    "label": "Network Access Traffic Logs (Preview)",
-                                    "value": "NetworkAccessTrafficLogs"
                                 },
                                 {
                                     "label": "Risky Service Principals (Preview)",
