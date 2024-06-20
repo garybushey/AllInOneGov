@@ -85,10 +85,6 @@
                     "enabled": "[contains(parameters('aadStreams'),'ManagedIdentitySignInLogs')]"
                 },
                 {
-                    "category": "ADFSSignInLogs",
-                    "enabled": "[contains(parameters('aadStreams'),'ADFSSignInLogs')]"
-                },
-                {
                     "category": "UserRiskEvents",
                     "enabled": "[contains(parameters('aadStreams'),'UserRiskEvents')]"
                 },
