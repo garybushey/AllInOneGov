@@ -97,10 +97,6 @@
                     "enabled": "[contains(parameters('aadStreams'),'RiskyUsers')]"
                 },
                 {
-                    "category": "NetworkAccessTrafficLogs",
-                    "enabled": "[contains(parameters('aadStreams'),'NetworkAccessTrafficLogs')]"
-                },
-                {
                     "category": "RiskyServicePrincipals",
                     "enabled": "[contains(parameters('aadStreams'),'RiskyServicePrincipals')]"
                 },
