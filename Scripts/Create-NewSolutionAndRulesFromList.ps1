@@ -27,13 +27,13 @@ $authHeader = @{
 }
 $SubscriptionId = $context.Subscription.Id
 
-$serverUrl = "management.azure.com"
+$serverUrl = "https://management.azure.com"
 if ($isGov)
 {
-    $serverUrl = "management.usgovcloudapi.net"
+    $serverUrl = "https://management.usgovcloudapi.net"
 }
 
-$baseUri = "https://$($serverUrl)/subscriptions/${SubscriptionId}/resourceGroups/${ResourceGroup}/providers/Microsoft.OperationalInsights/workspaces/${Workspace}"
+$baseUri = $serverUrl + "/subscriptions/${SubscriptionId}/resourceGroups/${ResourceGroup}/providers/Microsoft.OperationalInsights/workspaces/${Workspace}"
 $alertUri = "$baseUri/providers/Microsoft.SecurityInsights/alertRules/"
 
 # Get a list of all the solutions
