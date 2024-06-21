@@ -36,8 +36,12 @@ if ($isGov)
 $baseUri = $serverUrl + "/subscriptions/${SubscriptionId}/resourceGroups/${ResourceGroup}/providers/Microsoft.OperationalInsights/workspaces/${Workspace}"
 $alertUri = "$baseUri/providers/Microsoft.SecurityInsights/alertRules/"
 
+Write-Host " Base Uri: $baseUri"
 # Get a list of all the solutions
 $url = $baseUri + "/providers/Microsoft.SecurityInsights/contentProductPackages?api-version=2023-04-01-preview"
+
+Write-Host " Content Product Packages Uri: $url"
+
 $allSolutions = (Invoke-RestMethod -Method "Get" -Uri $url -Headers $authHeader ).value
 
 #Deploy each single solution
