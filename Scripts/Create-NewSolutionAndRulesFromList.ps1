@@ -4,7 +4,7 @@ param(
     [Parameter(Mandatory = $true)][string]$Region,
     [Parameter(Mandatory = $true)][string[]]$Solutions,
     [Parameter(Mandatory = $false)][string[]]$SeveritiesToInclude = @("Informational", "Low", "Medium", "High"),
-    [Parameter(Mandatory = $true)][string]$IsGov
+    [Parameter(Mandatory = $false)][string]$IsGov = $false
 )
 
 $context = Get-AzContext
@@ -28,7 +28,7 @@ $authHeader = @{
 $SubscriptionId = $context.Subscription.Id
 
 $serverUrl = "https://management.azure.com"
-if ($isGov) {
+if ($isGov -eq $true) {
     $serverUrl = "https://management.usgovcloudapi.net"
 }
 
